@@ -10,6 +10,8 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            Calculator ca= new Calculator();
+            ca.
             Console.WriteLine("Hello");
             //bvhjg
             Console.WriteLine("Abhishek");

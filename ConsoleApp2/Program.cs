@@ -34,13 +34,13 @@ namespace ConsoleApp2
                         Console.WriteLine(ca.Add(num1, num2));
                         break;
                     case 2:
-                        Console.WriteLine(ca.Add(num1, num2));
+                        Console.WriteLine(ca.Sub(num1, num2));
                         break;
                     case 3:
-                        Console.WriteLine(ca.Add(num1, num2));
+                        Console.WriteLine(ca.Mul(num1, num2));
                         break;
                     case 4:
-                        Console.WriteLine(ca.Add(num1, num2));
+                        Console.WriteLine(ca.Div(num1, num2));
                         break;
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyCalculator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +11,14 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            double num1, num2;
+            int num1, num2;
             int ch;
-            Calculator ca= new Calculator();
+           // Calculator ca= new Calculator();
+           Calc ca = new Calc();
 
             Console.WriteLine("Enter 2 numbers for Arithmetic operation");
-            num1=Convert.ToDouble(Console.ReadLine());
-            num2=Convert.ToDouble(Console.ReadLine());
+            num1=Convert.ToInt32(Console.ReadLine());
+            num2=Convert.ToInt32(Console.ReadLine());
 
             while (true)
             {
@@ -31,16 +33,16 @@ namespace ConsoleApp2
                 switch (ch)
                 {
                     case 1:
-                        Console.WriteLine(ca.Add(num1, num2));
+                        Console.WriteLine(ca.Sum(10, 20));
                         break;
                     case 2:
-                        Console.WriteLine(ca.Sub(num1, num2));
+                        Console.WriteLine(ca.Substract(num1, num2));
                         break;
                     case 3:
-                        Console.WriteLine(ca.Mul(num1, num2));
+                        Console.WriteLine(ca.Multiplication(num1, num2));
                         break;
                     case 4:
-                        Console.WriteLine(ca.Div(num1, num2));
+                        //Console.WriteLine(ca.Div(num1, num2));
                         break;
 
 

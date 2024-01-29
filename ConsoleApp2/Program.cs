@@ -10,22 +10,39 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            double num1, num2;
+            int ch;
             Calculator ca= new Calculator();
-            ca.
-            Console.WriteLine("Hello");
-            //bvhjg
-            Console.WriteLine("Abhishek");
-            //gdhgfgfgf
-            Console.WriteLine("final change");
 
-            Console.WriteLine("Test1");
-            Console.WriteLine("Test11");
-            ///sssssssssssss
-            //jdgdgh
-            //Mayur Last Comment
+            Console.WriteLine("Enter 2 numbers for Arithmetic operation");
+            num1=Convert.ToDouble(Console.ReadLine());
+            num2=Convert.ToDouble(Console.ReadLine());
 
-            //abhishek work start
-            Console.WriteLine("abhi");
+            while (true)
+            {
+
+                Console.WriteLine("Enter choice for operations" +
+                    "\n 1 for Add" +
+                    "\n 2 for Sub" +
+                    "\n 3 for Mul" +
+                    "\n 4 for Div" +
+                    "\n 5 for Exit");
+                ch = Convert.ToInt32(Console.ReadLine());
+                switch (ch)
+                {
+                    case 1:
+                        Console.WriteLine(ca.Add(num1, num2));
+                        break;
+
+
+                    case 5:
+                        return;
+
+
+                }
+
+            
+            }
         }
     }
 }

@@ -33,10 +33,23 @@ namespace ConsoleApp2
                     case 1:
                         Console.WriteLine(ca.Add(num1, num2));
                         break;
+                    case 2:
+                        Console.WriteLine(ca.Add(num1, num2));
+                        break;
+                    case 3:
+                        Console.WriteLine(ca.Add(num1, num2));
+                        break;
+                    case 4:
+                        Console.WriteLine(ca.Add(num1, num2));
+                        break;
 
 
                     case 5:
                         return;
+                    case 6:
+                        break;
+                        
+
 
 
                 }

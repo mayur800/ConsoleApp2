@@ -9,5 +9,10 @@ namespace ConsoleApp2
     internal class Calculator
     {
         
+        public double Add(double n1, double n2)
+        {
+            return n1 + n2;
+        }
+
     }
 }
